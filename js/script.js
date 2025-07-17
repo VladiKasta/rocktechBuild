@@ -1,0 +1,1 @@
+import burgerTrigger from"./burger.js";import initSwipers from"./swiper.js";import tilesTrigger from"./tiles-tiles__slider.js";document.addEventListener("DOMContentLoaded",function(){burgerTrigger(),initSwipers(),tilesTrigger()});
