@@ -1,1 +1,1 @@
-import burgerTrigger from"./burger.js";import initSwipers from"./swiper.js";import tilesTrigger from"./tiles-tiles__slider.js";document.addEventListener("DOMContentLoaded",function(){burgerTrigger(),initSwipers(),tilesTrigger()});
+import burgerTrigger from"./burger.js";import initIndexPage from"./initIndexPage.js";import initSwipers from"./swipers.js";let path=window.location.pathname;document.addEventListener("DOMContentLoaded",function(){burgerTrigger(),initSwipers(),"/"==path&&initIndexPage()});
