@@ -1,0 +1,1 @@
+export default function switcherScrollHint(){let e=document.getElementById("scrollHint"),t=!1,o=setInterval(()=>{t||(e.scrollTo({left:100,behavior:"smooth"}),setTimeout(()=>{e.scrollTo({left:0,behavior:"smooth"})},600))},3e3);e.addEventListener("pointerdown",()=>{t=!0,clearInterval(o)}),e.addEventListener("touchstart",()=>{t=!0,clearInterval(o)})}
