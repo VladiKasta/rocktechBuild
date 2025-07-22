@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Rocktech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=PT+Serif&family=Poiret+One&display=swap");
+    </style>
+
+    <!-- CSS Swiper -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <section class="header__wrapper">
+    <div class="container">
+      <div class="logo__section">
+        <a href="#"><img src="./assets/img/Logo.png" alt="" /></a>
+
+        <div class="input__wrapper">
+          <input type="text" placeholder="Search" />
+          <img class="icon" src="./assets/icons/lypa.svg" alt="" />
+        </div>
+      </div>
+
+      <ul class="header__nav">
+        <li><a href="#">Innovation</a></li>
+        <li><a href="#">Solution Finder</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <div class="burger__main">
+        <button class="burger" id="burger">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="search__mobile">
+    <div class="input__wrapper">
+      <input type="text" placeholder="Search" />
+      <img class="icon" src="./assets/icons/lypa.svg" alt="" />
+    </div>
+  </section>
+</header>
+ <div class="burger__menu">
+  <div class="burger__wrapper">
+    <div class="input__wrapper">
+      <input type="text" placeholder="Search" />
+      <img class="icon" src="../assets/icons/lypa.svg" alt="" />
+    </div>
+    <ul class="header__nav">
+      <li>Innovation</li>
+      <li>Solution Finder</li>
+      <li>Services</li>
+      <li>Company</li>
+      <li>Contact Us</li>
+    </ul>
+
+    <button class="contact-us__burger-btn">Contact Us</button>
+  </div>
+</div>
+
+
+      <main class="main solution__page">
+        <div class="container">
+          <div class="breadcrumbs">
+            <p><a href="/">Home</a> / <a href="#">Solution Finder</a></p>
+          </div>
+
+          <div class="solution__page__title">
+            <h2 class="text-[36px] md:text-[20px]">
+              Engineering Solutions: Firestop Product Finder
+            </h2>
+            <div class="solution__page__title-text text-[24px] md:text-[14px]">
+              Welcome to our
+              <span class="orange-text">Engineering Solutions</span> page. This
+              tool is designed to help you find the right firestop solutions for
+              your project. Whether you are looking for
+              <span class="orange-text">penetration seals</span> or
+              <span class="orange-text">linear joints</span>, our Product Finder
+              will guide you through the process of selecting the ideal firestop
+              product based on the specific requirements of your application.
+            </div>
+          </div>
+
+          <div class="solution_filters">
+            <button
+              class="solution_filters-btn active"
+              data-target=".first__filter__forms"
+            >
+              Penetration Seal
+            </button>
+            <button
+              class="solution_filters-btn"
+              data-target=".second__filter__forms"
+            >
+              Linear Joint
+            </button>
+
+            <p class="filter__note text-[16px] md:text-[14px]">
+              Designed to seal openings around pipes, cables, ducts, and other
+              penetrations in fire-rated walls, floors, and ceilings.
+            </p>
+
+            <div class="first__filter__forms">
+              <div class="size__form">
+                <h5 class="text-[16px] md:text-[14px]">Enter Aperture Size</h5>
+                <p class="size__form-text text-[16px] md:text-[14px]">
+                  Specify the size of the aperture (opening) that requires
+                  sealing. Our firestop products are engineered to work with a
+                  variety of sizes and provide reliable performance across
+                  different applications.
+                </p>
+
+                <label class="custom-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  <p class="text-[16px] md:text-[14px]">Circular Opening</p>
+                </label>
+                <input
+                  class="form__input"
+                  type="number"
+                  placeholder="cm Diametr"
+                />
+
+                <label class="custom-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  <p class="text-[16px] md:text-[14px]">Rectangular Opening</p>
+                </label>
+                <input
+                  class="form__input mb-[10px]"
+                  type="number"
+                  placeholder="Enter Width"
+                />
+                <input
+                  class="form__input"
+                  type="number"
+                  placeholder="Enter Height"
+                />
+              </div>
+
+              <div class="size__form">
+                <h5 class="text-[16px] md:text-[14px]">
+                  Select the Type of Penetration
+                </h5>
+                <p class="size__form-text text-[16px] md:text-[14px]">
+                  Choose the type of penetration or element passing through the
+                  opening. This will help us recommend the most effective
+                  firestop product based on material compatibility and
+                  performance criteria.
+                </p>
+                <div class="filter__dropdowns">
+                  <div
+                    class="filter__option dropdown text-[16px] md:text-[14px]"
+                    data-target=".dropdown-menu__cables"
+                  >
+                    <p class="dropdown-toggle">Cables</p>
+                    <img src="./assets/icons/chevron-down.svg" alt="" />
+
+                    <div class="dropdown-menu dropdown-menu__cables">
+                      <a class="dropdown-item" href="#">Cable 1</a
+                      ><a class="dropdown-item" href="#">Cable 2</a
+                      ><a class="dropdown-item" href="#">Cable 3</a>
+                    </div>
+                  </div>
+
+                  <div
+                    class="filter__option dropdown text-[16px] md:text-[14px]"
+                    data-target=".dropdown-menu__single"
+                  >
+                    <p class="dropdown-toggle">Single</p>
+                    <img src="./assets/icons/chevron-down.svg" alt="" />
+
+                    <div class="dropdown-menu dropdown-menu__single">
+                      <a class="dropdown-item" href="#">Single 1</a
+                      ><a class="dropdown-item" href="#">Single 2</a
+                      ><a class="dropdown-item" href="#">Single 3</a>
+                    </div>
+                  </div>
+
+                  <div
+                    class="filter__option dropdown text-[16px] md:text-[14px]"
+                    data-target=".dropdown-menu__tray"
+                  >
+                    <p class="dropdown-toggle">Without Tray</p>
+                    <img src="./assets/icons/chevron-down.svg" alt="" />
+
+                    <div class="dropdown-menu dropdown-menu__tray">
+                      <a class="dropdown-item" href="#">Tray 1</a
+                      ><a class="dropdown-item" href="#">Tray 2</a
+                      ><a class="dropdown-item" href="#">Tray 3</a>
+                    </div>
+                  </div>
+
+                  <div
+                    class="filter__option dropdown text-[16px] md:text-[14px]"
+                    data-target=".dropdown-menu__size"
+                  >
+                    <p class="dropdown-toggle">Cable Size</p>
+                    <img src="./assets/icons/chevron-down.svg" alt="" />
+
+                    <div class="dropdown-menu dropdown-menu__size">
+                      <a class="dropdown-item" href="#">Size 1</a
+                      ><a class="dropdown-item" href="#">Size 2</a
+                      ><a class="dropdown-item" href="#">Size 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="size__form">
+                <h5 class="text-[16px] md:text-[14px]">Enter Aperture Size</h5>
+                <p class="size__form-text text-[16px] md:text-[14px]">
+                  Specify the size of the aperture (opening) that requires
+                  sealing. Our firestop products are engineered to work with a
+                  variety of sizes and provide reliable performance across
+                  different applications.
+                </p>
+                <div class="filter__checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <p class="text-[16px] md:text-[14px]">
+                      Concrete Wall (150mm)
+                    </p>
+                  </label>
+
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <p class="text-[16px] md:text-[14px]">
+                      Concrete Floor (200mm)
+                    </p>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <p class="text-[16px] md:text-[14px]">
+                      Masonry Wall (150mm)
+                    </p>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <p class="text-[16px] md:text-[14px]">
+                      Masonry Floor (200mm)
+                    </p>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <p class="text-[16px] md:text-[14px]">Masonry</p>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                    <p class="text-[16px] md:text-[14px]">Plaster board</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="second__filter__forms">
+              <div class="size__form">
+                <h5 class="text-[16px] md:text-[14px]">
+                  Chose main supporting construction type
+                </h5>
+                <p class="size__form-text text-[16px] md:text-[14px]"></p>
+
+                <label class="custom-checkbox mr-[30px]">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  <p class="text-[16px] md:text-[14px]">Wall</p>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                  <p class="text-[16px] md:text-[14px]">Floor</p>
+                </label>
+                <input
+                  class="form__input mb-[15px]"
+                  type="number"
+                  placeholder="cm Thickness"
+                />
+
+                <div
+                  class="filter__option dropdown text-[16px] md:text-[14px]"
+                  data-target=".dropdown-menu__materials"
+                >
+                  <p class="dropdown-toggle">Material</p>
+                  <img src="./assets/icons/chevron-down.svg" alt="" />
+
+                  <div class="dropdown-menu dropdown-menu__materials">
+                    <a class="dropdown-item" href="#">Material 1</a
+                    ><a class="dropdown-item" href="#">Material 2</a
+                    ><a class="dropdown-item" href="#">Material 3</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="size__form">
+                <h5 class="text-[16px] md:text-[14px]">Seal Orientation</h5>
+                <p class="size__form-text text-[16px] md:text-[14px]">
+                  Chose the orientation of the seal within a wall or floor
+                </p>
+
+                <div
+                  class="filter__option dropdown mt-[15px] text-[16px] md:text-[14px]"
+                  data-target=".dropdown-menu__orientation"
+                >
+                  <p class="dropdown-toggle">Orientation</p>
+                  <img src="./assets/icons/chevron-down.svg" alt="" />
+
+                  <div class="dropdown-menu dropdown-menu__orientation">
+                    <a class="dropdown-item" href="#">Orientation 1</a
+                    ><a class="dropdown-item" href="#">Orientation 2</a
+                    ><a class="dropdown-item" href="#">Orientation 3</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="size__form">
+                <h5 class="text-[16px] md:text-[14px]">Seal Orientation</h5>
+                <p class="size__form-text text-[16px] md:text-[14px]">
+                  Chose the orientation of the seal within a wall or floor
+                </p>
+
+                <input
+                  class="form__input mt-[15px]"
+                  type="number"
+                  placeholder="cm Width"
+                />
+              </div>
+
+              <div class="size__form">
+                <h5 class="text-[16px] md:text-[14px]">Additional Substrate</h5>
+                <p class="size__form-text text-[16px] md:text-[14px]">
+                  Is the seal in touch with other construction materials such as
+                  a door frame or a window jamp? Please indicate what other
+                  material is in touch with the seal
+                </p>
+
+                <div
+                  class="filter__option dropdown mt-[15px] text-[16px] md:text-[14px]"
+                  data-target=".dropdown-menu__orientation"
+                >
+                  <p class="dropdown-toggle">Orientation</p>
+                  <img src="./assets/icons/chevron-down.svg" alt="" />
+
+                  <div class="dropdown-menu dropdown-menu__orientation">
+                    <a class="dropdown-item" href="#">Orientation 1</a
+                    ><a class="dropdown-item" href="#">Orientation 2</a
+                    ><a class="dropdown-item" href="#">Orientation 3</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div˛ class="filter__apply__btns">
+              <button id="apply-filters">Apply Filter</button>
+              <button id="clear-filters">Clear Filter</button>
+            </div>
+          </div>
+          <div class="container">
+            <div class="founded__section__info__filter">
+              <p class='found__note text-[16px] md:text-[14px] '><span class='text-[16px] md:text-[14px] font-bold'>0</span> Product found</p>
+              <button class='clear__found__filter text-[16px] md:text-[14px] md:hidden'><p>Clear filters</p><img src="./assets/icons/x.svg" alt="x"></button>
+
+            </div>
+            <!-- here -->
+						 <h2 class='empty__result__title text-[24px] md:text-[20px]'>No matching solutions found</h2>
+
+            <div class="founded__products__section__pagination">
+              <div class="pagination__start"><img src="./assets/icons/go-to-start.png" alt=""></div>
+              <div class="pagination__prev"><img src="./assets/icons/go-back.png" alt=""></div>
+              <div class='pagination__page'><span>1</span></div>
+             
+              <div class="pagination__next"><img src="./assets/icons/go-next.png" alt=""></div>
+              <div class="pagination__end"><img src="./assets/icons/go-to-end.png" alt=""></div>
+            </div>
+
+            <div class="founded__products__section__pagination-mobile empty">
+              
+              <div class="pagination__prev"><img src="./assets/icons/go-back.png" alt=""></div>
+              <div class='pagination__page active'><span>1</span></div>
+              <div class='pagination__page'><span>2</span></div>
+              <div class='pagination__page'><span>3</span></div>
+              
+
+              <span>...</span>
+
+              <div class='pagination__page'><span>123</span></div>
+              <div class="pagination__next"><img src="./assets/icons/go-next.png" alt=""></div>
+             
+            </div>
+
+            <div class="solutions__bottom__text">
+              <div class="solutions__upper__text">
+                <h2 class='text-[36px] md:text-[20px]'>Why Choose Our Solutions?</h2>
+                <p class='text-[16px] md:text-[14px]'>
+                  Our product range is rigorously tested and certified to meet the highest industry
+standards, ensuring that your firestop system provides reliable and effective
+protection against the spread of fire, smoke, and gases.
+                </p>
+              </div>
+
+              <div class="solutions__tiles__text">
+                <div class='solitions__tile__text'>
+                  <h3 class='text-[24px] md:text-[18px]'>Expertise</h3>
+                  <p class='text-[16px] md:text-[14px]'>Backed by years of engineering experience, our solutions are
+                    designed to meet the most stringent fire safety requirements.</p>
+                </div>
+
+                <div class='solitions__tile__text'>
+                  <h3 class='text-[24px] md:text-[18px]'>Comprehensive Range</h3>
+                  <p class='text-[16px] md:text-[14px]'>We offer an extensive selection of firestop
+                    products for every kind of construction and penetration.</p>
+                </div>
+
+                <div class='solitions__tile__text'>
+                  <h3 class='text-[24px] md:text-[18px]'>Certified and Tested</h3>
+                  <p class='text-[16px] md:text-[14px]'>All our products are tested to international
+                    standards and certified for various applications.</p>
+                </div>
+
+                <div class='solitions__tile__text'>
+                  <h3 class='text-[24px] md:text-[18px]'>Technical Support</h3>
+                  <p class='text-[16px] md:text-[14px]'>Our team of experts is available to assist you with product selection and installation guidance.</p>
+                </div>
+              </div>
+
+              <div class="solutions__bottom__text__note">
+                <p class='text-[16px] md:text-[14px]'>If you need <span class='font-bold'>further assistance</span> or have specific questions, don’t hesitate to
+                  contact our team. We’re here to help you ensure the highest level of fire safety in
+                  your building.</p>
+
+                  <button id='contact-us-btn' class='main_btn'>Contact us</button>
+
+                  <div id="modal" class="modal">
+                    <div class="form__container modal-content">
+                      <form
+                        class="contact-us__form flex flex-col gap-[30px]"
+                        action="#"
+                      >
+                        <h2 class="text-[40px] md:text-[18px]">
+                          Any questions? Contact us
+                        </h2>
+                        <input
+                          class="text-[20px] md:text-[16px]"
+                          type="text"
+                          placeholder="Your name"
+                        />
+                        <input
+                          class="text-[20px] md:text-[16px]"
+                          type="phone"
+                          placeholder="Your phone"
+                        />
+                        <input
+                          class="text-[20px] md:text-[16px]"
+                          type="email"
+                          placeholder="Your email"
+                        />
+                        <button class="text-[20px] md:text-[14px]">Send request</button>
+                      </form>
+                      <img class='modal-close' src="./assets/icons/x-closeModal.png" alt="">
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+         
+        </div>
+      </main>
+
+      <footer class="footer md:mt-[40px]">
+  <div class="container">
+    <div class="footer__logo"></div>
+    <div class="footer__nav">
+      <ul class="text-[18px] md:text-[16px]">
+        <p>Contact</p>
+        <li>
+          <a href="#">ServiceCustomer </a>
+        </li>
+        <li><a href="#">Request for quotation</a></li>
+      </ul>
+      <ul class="text-[18px] md:text-[16px]">
+        <p>Company</p>
+        <li><a href="#">About Company</a></li>
+      </ul>
+      <ul class="text-[18px] md:text-[16px]">
+        <p>Quick links</p>
+        <li><a href="#">Firestop videos</a></li>
+        <li><a href="#">Engineering Solution</a></li>
+      </ul>
+      <ul class="text-[18px] md:text-[16px]">
+        <p>Download</p>
+        <li><a href="#">Technical Data</a></li>
+      </ul>
+    </div>
+    <div class="copyright">© 2024-2026 Rocktech. All rights reserved.</div>
+  </div>
+</footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>

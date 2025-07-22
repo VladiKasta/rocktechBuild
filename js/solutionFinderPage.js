@@ -4,7 +4,10 @@ export default function solutionFinderPage() {
   const isSolutionFinderPage = location.pathname.endsWith(
     "/solution_finder.html",
   );
-  if (isSolutionFinderPage) {
+  const isSolutionFinderEmptyPage = location.pathname.endsWith(
+    "/solution_finder_empty.html",
+  );
+  if (isSolutionFinderPage || isSolutionFinderEmptyPage) {
     dropdownsTriggerSolutionPage();
 
     const filterSwitchers = document.querySelectorAll(".solution_filters-btn");

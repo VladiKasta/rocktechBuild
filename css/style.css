@@ -2400,6 +2400,12 @@ a {
   top: 15px;
 }
 
+.empty__result__title {
+  font-weight: 500;
+  margin-top: 30px;
+  line-height: 120%;
+}
+
 .hover\:bg-\[\#CE560A\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(206 86 10 / var(--tw-bg-opacity, 1));

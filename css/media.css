@@ -530,4 +530,11 @@
   .solutions__bottom__text h2 {
     margin-bottom: 20px;
   }
+  .empty__result__title {
+    color: #909090;
+    margin-bottom: 120px;
+  }
+  .founded__products__section__pagination-mobile.empty {
+    display: none;
+  }
 }
