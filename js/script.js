@@ -1,1 +1,13 @@
-import burgerTrigger from"./burger.js";import initIndexPage from"./initIndexPage.js";import productPage from"./productPage.js";import initSwipers from"./swipers.js";let isIndexPage=location.pathname.endsWith("/")||location.pathname.endsWith("/index.html"),isProductPage=location.pathname.endsWith("/product_page.html");document.addEventListener("DOMContentLoaded",function(){burgerTrigger(),initSwipers(),isIndexPage&&initIndexPage(),isProductPage&&productPage()});
+import burgerTrigger from "./burger.js";
+import initIndexPage from "./initIndexPage.js";
+import productPage from "./productPage.js";
+import solutionFinderPage from "./solutionFinderPage.js";
+import initSwipers from "./swipers.js";
+
+document.addEventListener("DOMContentLoaded", function () {
+  burgerTrigger();
+  initSwipers();
+  initIndexPage();
+  productPage();
+  solutionFinderPage();
+});

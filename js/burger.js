@@ -1,1 +1,22 @@
-export default function burgerTrigger(){let e=document.getElementById("burger"),l=document.querySelector(".burger__menu"),t=l.querySelector(".header__nav");document.querySelector(".search__mobile");let r=l.querySelector(".burger__wrapper");e.addEventListener("click",()=>{"block"==r.style.display?r.style.display="none":r.style.display="block",e.classList.toggle("active"),l.classList.toggle("visible"),t.classList.toggle("visible")})}
+export default function burgerTrigger() {
+  const burger = document.getElementById("burger");
+  const burgerMenu = document.querySelector(".burger__menu");
+  const navItems = burgerMenu.querySelector(".header__nav");
+  const searchMobile = document.querySelector(".search__mobile");
+  const burgerWrapper = burgerMenu.querySelector(".burger__wrapper");
+
+  burger.addEventListener("click", () => {
+    if (burgerWrapper.style.display == "block") {
+      burgerWrapper.style.display = "none";
+      /* document.body.classList.remove("noscroll"); */
+    } else {
+      burgerWrapper.style.display = "block";
+      /* document.body.classList.add("noscroll"); */
+    }
+
+    /* searchMobile.classList.toggle("hidden"); */
+    burger.classList.toggle("active");
+    burgerMenu.classList.toggle("visible");
+    navItems.classList.toggle("visible");
+  });
+}

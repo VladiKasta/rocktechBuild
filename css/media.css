@@ -431,3 +431,103 @@
     transform: translateY(0);
   }
 }
+@media (max-width: 1024px) {
+  .first__filter__forms,
+  .second__filter__forms {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .solution_filters {
+    border-radius: 0;
+    padding: 15px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+  .filter__apply__btns {
+    display: flex;
+  }
+}
+@media (max-width: 1200px) {
+  .found__item__content {
+    flex-direction: column;
+  }
+  .found_item__properties__show {
+    display: block;
+    color: #848484;
+    border-color: #cacaca;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+  }
+  .found_item__properties {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .found__item__content {
+    display: flex;
+  }
+  .found__item__content img {
+    max-width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-height: 279px;
+    display: block;
+    margin-right: 0;
+  }
+  .found__item__desription {
+    margin-right: 0;
+  }
+  .found__item__desription .found__item__base__info {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .found__item__desription .found__item__base__info button {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .found__item__desription {
+    margin-right: 0;
+  }
+  .found__item__desription .found__item__base__info {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .found__item__desription .found__item__base__info button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .found_item__properties {
+    margin-top: 20px;
+  }
+  .found_item__properties div {
+    background-color: white;
+    border-radius: 14px;
+    padding: 10px 15px;
+  }
+  .founded__products__section__pagination-mobile {
+    display: flex;
+  }
+  .founded__products__section__pagination {
+    display: none;
+  }
+  .solutions__tiles__text {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-top: 20px;
+  }
+  .solutions__bottom__text {
+    margin-top: 40px;
+  }
+  .solutions__bottom__text h2 {
+    margin-bottom: 20px;
+  }
+}

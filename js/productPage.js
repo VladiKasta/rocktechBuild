@@ -1,1 +1,66 @@
-import switcherScrollHint from"./switcherScrollHint.js";export default function productPage(){var e=document.querySelector(".product__info__switcher").querySelectorAll(".switch__category");document.querySelectorAll(".switcher__section");window.innerWidth<=1480&&switcherScrollHint();let r=e[0],i=(r.classList.add("active"),document.querySelector(r.getAttribute("data-target")));i.classList.remove("hidden"),e.forEach(t=>{var e=t.getAttribute("data-target");let c=document.querySelector(e);t.addEventListener("click",e=>{t!=r&&(i.classList.add("hidden"),r.classList.remove("active"),r=t,c&&(i=c,console.log(c)),r.classList.add("active"),i.classList.remove("hidden"))})})}
+import switcherScrollHint from "./switcherScrollHint.js";
+
+export default function productPage() {
+  const isProductPage = location.pathname.endsWith("/product_page.html");
+
+  if (isProductPage) {
+    const switcher = document.querySelector(".product__info__switcher");
+    const switchCategory = switcher.querySelectorAll(".switch__category");
+    const switcherSectionsNodes =
+      document.querySelectorAll(".switcher__section");
+
+    /*   class AccordionSections {
+      constructor(sections, sectionsToShow) {
+        this.sections = {};
+        for (let index = 0; index < sections.length; index++) {
+          const section = sections[index].querySelector("span").textContent;
+          if (section) {
+            const key = section.toLowerCase();
+            this.sections[key] = sectionsToShow[index];
+          }
+        }
+      }
+    } */
+
+    /*   const accordionSectionClasses = new AccordionSections(
+      switchCategory,
+      switcherSectionsNodes,
+    );
+    console.log(accordionSectionClasses); */
+
+    if (window.innerWidth <= 1480) {
+      switcherScrollHint();
+    }
+
+    let currentCategory = switchCategory[0];
+    currentCategory.classList.add("active");
+
+    let currentContent = document.querySelector(
+      currentCategory.getAttribute("data-target"),
+    );
+    currentContent.classList.remove("hidden");
+
+    switchCategory.forEach((category) => {
+      const targetClassToShow = category.getAttribute("data-target");
+      const content = document.querySelector(targetClassToShow);
+
+      category.addEventListener("click", (event) => {
+        if (category == currentCategory) {
+          return;
+        } else {
+          currentContent.classList.add("hidden");
+          currentCategory.classList.remove("active");
+
+          currentCategory = category;
+
+          if (content) {
+            currentContent = content;
+          }
+
+          currentCategory.classList.add("active");
+          currentContent.classList.remove("hidden");
+        }
+      });
+    });
+  }
+}
