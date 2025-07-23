@@ -538,3 +538,21 @@
     display: none;
   }
 }
+@media (max-width: 1480px) {
+  .Innovation__interactive__images {
+    display: none;
+  }
+  .innovation__title.title {
+    display: none;
+  }
+  .innovation__text__form__wrapper {
+    gap: 30px;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .accordion__item__content__cards {
+    grid-template-rows: none;
+    grid-template-columns: 1fr;
+  }
+}

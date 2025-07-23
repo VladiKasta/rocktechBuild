@@ -501,6 +501,9 @@ video {
 .w-\[40\%\]{
   width: 40%;
 }
+.w-\[40px\]{
+  width: 40px;
+}
 .w-\[50\%\]{
   width: 50%;
 }
@@ -628,6 +631,12 @@ video {
 .text-\[24px\]{
   font-size: 24px;
 }
+.text-\[28px\]{
+  font-size: 28px;
+}
+.text-\[30px\]{
+  font-size: 30px;
+}
 .text-\[32px\]{
   font-size: 32px;
 }
@@ -642,6 +651,10 @@ video {
 }
 .font-light{
   font-weight: 300;
+}
+.\!text-white{
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1)) !important;
 }
 .text-\[\#515151\]{
   --tw-text-opacity: 1;
@@ -2380,12 +2393,11 @@ a {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5); /* полупрозрачный фон */
-  /* display: flex; */
+  background: rgba(0, 0, 0, 0.5);
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* СЛОЙ НАД ВСЕМ */
+  z-index: 9999;
 }
 
 .modal-content {
@@ -2404,6 +2416,181 @@ a {
   font-weight: 500;
   margin-top: 30px;
   line-height: 120%;
+}
+
+.Innovation__interactive__images {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  gap: 32px;
+}
+
+.hoverable__images {
+  border-radius: 14px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hovered__product__info {
+  flex: 1;
+  background-color: #eeeef0;
+  border-radius: 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hovered__product__info h3 {
+  font-family: Manrope;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+}
+.hovered__product__info span {
+  font-family: Manrope;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+}
+
+.innovation__main.main {
+  margin-top: 30px;
+}
+
+.innovation__main__text {
+  margin-top: 30px;
+}
+.innovation__main__text h2 {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.innovation__main__text .innovation__text__form__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.innovation__main__text .innovation__text__form__wrapper .form__container {
+  max-width: 472px;
+}
+.innovation__main__text p {
+  display: flex;
+  flex-direction: column;
+  max-width: 850px;
+  font-family: Lexend;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.innovation__bottom__accordion {
+  max-width: 976px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.accordion__item-bg {
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-image: url("../assets/img/innovation-accordion-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.accordion__item-bg-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 305px;
+}
+.accordion__item-bg-left h3 {
+  font-family: Lexend;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 28px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.accordion__item-bg-left img {
+  width: 100%;
+}
+
+.accordion__item {
+  padding: 20px 30px;
+  background-color: #eeeef0;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.closed__item__view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion__item__content {
+  /*  display: none; */
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0%;
+  transition: all 0.5s ease;
+}
+
+.accordion__item__content__cards {
+  max-width: 670px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.accordion__item__content__card {
+  padding: 20px;
+  background-color: white;
+  border-radius: 14px;
+}
+.accordion__item__content__card h3 {
+  font-family: Lexend;
+  font-weight: 400;
+  line-height: 140%;
+}
+.accordion__item__content__card p {
+  color: #7d7d7d;
+  font-family: Lexend;
+  font-weight: 400;
+  font-style: Regular;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.icon {
+  transition: all 0.5s ease;
+}
+
+.accordion__item.open .icon {
+  transform: rotate(-180deg);
+}
+
+.accordion__item__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.accordion__item__content.open {
+  margin-top: 30px;
 }
 
 .hover\:bg-\[\#CE560A\]:hover{

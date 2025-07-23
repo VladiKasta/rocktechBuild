@@ -1,5 +1,6 @@
 import burgerTrigger from "./burger.js";
 import initIndexPage from "./initIndexPage.js";
+import innovationPage from "./innovationPage.js";
 import productPage from "./productPage.js";
 import solutionFinderPage from "./solutionFinderPage.js";
 import initSwipers from "./swipers.js";
@@ -10,4 +11,5 @@ document.addEventListener("DOMContentLoaded", function () {
   initIndexPage();
   productPage();
   solutionFinderPage();
+  innovationPage();
 });
